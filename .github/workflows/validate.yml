@@ -1,0 +1,23 @@
+name: validate-kernel-optimization-workflow
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: PYTHONPATH=src python scripts/validate_skill.py
+      - run: PYTHONPATH=src python scripts/smoke_test.py
+      - run: PYTHONPATH=src python -m unittest discover -s tests -v
+      - run: |
+          if [ -f "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" ]; then
+            python "$HOME/.codex/skills/.system/skill-creator/scripts/quick_validate.py" skill/kernel-optimization-orchestrator
+          else
+            echo 'Codex quick validator is unavailable on this runner; project validation already ran.'
+          fi

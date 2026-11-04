@@ -1,0 +1,3 @@
+backend: ascendc
+target: {vendor: huawei, device_sku: required, architecture_id: required}
+tools: {device: npu-smi, compiler: bisheng, profiler: [msopprof, msprof]}

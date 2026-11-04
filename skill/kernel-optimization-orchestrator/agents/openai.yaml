@@ -1,0 +1,6 @@
+interface:
+  display_name: "Kernel Optimization Orchestrator"
+  short_description: "Evidence-driven GPU/NPU kernel optimization"
+  default_prompt: "Use $kernel-optimization-orchestrator to start a kernel optimization task with model and hardware confirmation."
+policy:
+  allow_implicit_invocation: true

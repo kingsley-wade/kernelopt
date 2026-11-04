@@ -1,0 +1,3 @@
+backend: cuda
+target: {vendor: nvidia, device_sku: required, architecture_id: required}
+tools: {device: nvidia-smi, compiler: nvcc, profiler: [ncu, nsys]}

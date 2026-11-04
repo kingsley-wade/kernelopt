@@ -1,0 +1,10 @@
+{
+  "requested_agent_model": "ask-user",
+  "effective_agent_model": null,
+  "model_routing_supported": null,
+  "workload_model": null,
+  "backend": null,
+  "device_sku": null,
+  "objective": "operator optimization",
+  "budget": {"max_experiments": 30}
+}

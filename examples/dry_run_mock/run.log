@@ -1,0 +1,6 @@
+START WAIT_MODEL
+MODEL_CONFIRMED requested=default effective=runtime-default native_subagents=false
+WAIT_HARDWARE
+ARCH_RESEARCH BLOCKED_NO_OFFICIAL_ARCH (mock/no hardware)
+REVIEW stop reason=environment_gate
+END NOT_AVAILABLE

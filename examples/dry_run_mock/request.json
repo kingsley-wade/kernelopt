@@ -1,0 +1,15 @@
+{
+  "requested_agent_model": "user-confirmed-default",
+  "effective_agent_model": "runtime-default",
+  "model_routing_supported": false,
+  "workload_model": null,
+  "backend": "mock",
+  "vendor": "mock",
+  "device_sku": "mock-device",
+  "architecture_id": "mock-1",
+  "sdk_version": "mock-sdk",
+  "objective": "dry-run workflow",
+  "budget": {
+    "max_experiments": 1
+  }
+}

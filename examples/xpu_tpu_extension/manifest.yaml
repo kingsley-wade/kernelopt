@@ -1,0 +1,5 @@
+backend_id: extension-example
+status: experimental
+required_evidence:
+  architecture_diagram: true
+  vendor_documentation: true

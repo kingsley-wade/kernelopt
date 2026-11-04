@@ -1,0 +1,7 @@
+backend_id: xpu-stub
+family: xpu
+status: experimental
+adapter_entrypoint: kernel_opt.backends.base:NotConfiguredAdapter
+required_evidence:
+  architecture_diagram: true
+  vendor_documentation: true

@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "artifact_id",
+    "created_at",
+    "producer_role",
+    "evidence_ids",
+    "status",
+    "provenance_kind"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "artifact_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "producer_role": {
+      "type": "string"
+    },
+    "evidence_ids": {
+      "type": "array"
+    },
+    "status": {
+      "type": "string"
+    },
+    "provenance_kind": {
+      "enum": [
+        "measured",
+        "derived",
+        "estimated",
+        "simulated"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

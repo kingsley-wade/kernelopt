@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.so
+*.o
+build/
+build*/
+.cache/
+.DS_Store
+.env
+*.trace
+*.prof
+*.sqlite
+# Generated release archives can be attached to GitHub Releases instead of commits.
+dist/*.zip

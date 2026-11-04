@@ -1,0 +1,17 @@
+{
+  "status": "PASS_WITH_ENVIRONMENT_LIMITS",
+  "project_validation": "PASS",
+  "dry_run_mock": "PASS",
+  "unit_tests": {
+    "status": "PASS",
+    "count": 23
+  },
+  "schema_validation": "PASS",
+  "native_subagents": false,
+  "hardware_compile_correctness_benchmark_profiler": "NOT_AVAILABLE",
+  "hardware_reason": "No verified CUDA/Ascend device and toolchain were observed; adapters return NOT_CONFIGURED.",
+  "provenance_note": "No measured latency or profiler metric is included.",
+  "repository_install_docs": "PASS",
+  "isolated_local_install": "PASS",
+  "github_remote_install": "NOT_RUN_UNTIL_REPOSITORY_IS_PUBLISHED"
+}

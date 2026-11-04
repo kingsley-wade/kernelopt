@@ -1,0 +1,9 @@
+performance:
+  diagnostics:
+    roofline: auto
+    memory_reuse: auto
+    latency_hiding: auto
+    launch_overhead: auto
+    queueing:
+      mode: auto
+      model: kingman_if_applicable

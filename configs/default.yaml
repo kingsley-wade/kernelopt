@@ -1,0 +1,25 @@
+orchestrator:
+  execution_mode: sequential
+  model_policy: ask_each_task
+  effective_model_fallback: runtime_default_with_disclosure
+  single_writer_for_best: true
+  max_experiments: 30
+  max_correctness_repairs_per_candidate: 3
+  max_consecutive_no_gain: 4
+  min_practical_speedup: 1.01
+  seed: 2026
+  require_canonical_operator_spec: true
+  require_official_arch_research: true
+  require_correctness_before_benchmark: true
+  benchmark_device_lock: true
+  simulate_if_no_hardware: false
+performance:
+  diagnostics:
+    roofline: auto
+    memory_reuse: auto
+    latency_hiding: auto
+    launch_overhead: auto
+    queueing: {mode: auto}
+logging:
+  append_only_experiments: true
+  record_source_hash_and_config_hash: true

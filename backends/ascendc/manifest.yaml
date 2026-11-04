@@ -1,0 +1,6 @@
+backend_id: ascendc
+status: supported-interface
+required_evidence:
+  architecture_diagram: true
+  vendor_documentation: true
+  device_probe: true

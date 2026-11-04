@@ -1,0 +1,4 @@
+metrics:
+  latency: {unit: ms, provenance: measured}
+  profiler_trace: {unit: path, provenance: measured}
+  device_identity: {unit: string, provenance: measured}
